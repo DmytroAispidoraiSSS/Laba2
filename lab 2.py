@@ -1,5 +1,7 @@
-int_list = [5, 2, 8, 4, 3, 7, 9, 1, 10, 6]
-str_list = ["banana", "apple", "kiwi", "grape", "orange", "lemon", "pear", "melon", "peach", "pineapple"]
+list = [5, 2, 8, 4, 3, 7, 9, 1, 10, 6, "banana", "apple", "kiwi", "grape", "orange", "lemon", "pear", "melon", "peach", "pineapple"]
+
+str_list = [x for x in list if isinstance(x, str)]
+int_list = [x for x in list if isinstance(x, int)]
 
 int_list.sort()
 str_list.sort()
@@ -21,4 +23,5 @@ print("ціло численний список:", int_list)
 print("відсортований список:", sorted_list)
 print("список який кратних двом:", sort_list)
 print("стрічковий список капсом:", STR_list)
+
 
